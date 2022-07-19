@@ -1,9 +1,9 @@
-<h1 align="center">Media Player</h1>
+<h1 align="center">Landing Page</h1>
 
 ## Getting Started
 
 Clone the repository
 
 ```bash
-git clone https://github.com/edgarmontielt/landing-page
+git clone https://github.com/edgarmontielt/landing-page.git
 ```

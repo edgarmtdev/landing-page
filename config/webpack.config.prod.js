@@ -7,16 +7,6 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   entry: './src/js/index.js',
   mode: 'production',
-  devtool: 'eval-source-map',
-  devServer: {
-    port: 3000,
-    hot: true,
-    static: path.join(__dirname, '../build'),
-    open: true,
-    devMiddleware: {
-      publicPath: '/',
-    }
-  },
   output: {
     path: path.join(__dirname, '../build'),
     filename: 'index.js',
@@ -45,7 +35,6 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [
-          // 'style-loader',
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
@@ -70,7 +59,6 @@ module.exports = {
       {
         test: /\.scss$/i,
         use: [
-          // 'style-loader',
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
@@ -93,7 +81,6 @@ module.exports = {
           {
             loader: "sass-loader",
             options: {
-              // Prefer `dart-sass`
               implementation: require("sass"),
             },
           },

@@ -1,3 +1,6 @@
 @use './global/global.scss';
 @use './global/mixins.scss';
+@use './global/utils/typography.scss';
 @use './components/navbar.scss';
+@use './modules/header/index.scss';
+@use './modules/header/carrousel.scss';
