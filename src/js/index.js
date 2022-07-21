@@ -1,4 +1,7 @@
 'use strict'
+import './modules/carrousel/index.js'
 import '../sass/index.scss'
 
-console.log('Hola mUndo');
+document.addEventListener('DOMContentLoaded', () => {
+    
+})

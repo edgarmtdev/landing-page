@@ -1,17 +1,41 @@
-.header-cards {
-    display: flex;
-    gap: 2rem;
-    width: 20rem;
-    height: 60vh;
+.cards {
+    display: -webkit-box;
+    gap: 1rem;
+    width: 50%;
+    height: 70vh;
+    position: absolute;
+    right: 0;
+    margin-top: 3rem;
     overflow-x: scroll;
-    overflow-y: hidden;
-    position: relative;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
     color: black;
+    &::-webkit-scrollbar {
+        overflow-x: hidden;
+    }
 }
 
-.header-card {
+.card {
     background-color: white;
-    width: 100%;
-    height: 30rem;
+    width: 300px;
+    height: 25rem;
     padding: 1rem;
+    // animation: translate 1s ease-in;
+    border-radius: 16px;
+}
+
+#rigth {
+    position: absolute;
+    right: 1rem;
+    padding: 10px;
+    border-radius: 9999px;
+}
+
+@keyframes translate {
+    from {
+        transform: translateY(40%);
+    }
+    to {
+        transform: translateY(0%);
+    }
 }
