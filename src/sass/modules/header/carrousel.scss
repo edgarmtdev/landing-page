@@ -1,9 +1,23 @@
+@mixin mixin($size) {
+    @if $size == sm {
+      @media (max-width: 599px) { @content; }
+    } @else if $size == md {
+      @media (min-width: 600px) { @content; }
+    } @else if $size == lg{
+      @media (min-width: 900px) { @content; }
+    } @else if $size == xl {
+      @media (min-width: 1200px) { @content; }
+    } @else if $size == 2xl {
+      @media (min-width: 1800px) { @content; }
+    }
+  }
+
 .cards {
     display: -webkit-box;
     gap: 1rem;
-    width: 50%;
+    // width: 50%;
     height: 70vh;
-    position: absolute;
+    // position: absolute;
     right: 0;
     margin-top: 3rem;
     overflow-x: scroll;
@@ -15,6 +29,13 @@
     }
 }
 
+@include mixin(md) {
+    // .cards {
+    //     position: absolute;
+    //     width: 50%;
+    // }
+}
+
 .card {
     background-color: white;
     width: 300px;
@@ -24,11 +45,16 @@
     border-radius: 16px;
 }
 
-#rigth {
+#rigth,
+#left {
     position: absolute;
     right: 1rem;
     padding: 10px;
     border-radius: 9999px;
+}
+
+#left {
+    right: 3rem;
 }
 
 @keyframes translate {
