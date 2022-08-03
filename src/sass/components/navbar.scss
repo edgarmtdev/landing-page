@@ -1,5 +1,6 @@
 .navbar {
-    padding: 1rem 2rem;
+    color: rgb(111, 111, 111);
+    padding: 1.5rem 2rem;
 }
 
 .navbar-container {
@@ -10,4 +11,25 @@
     display: flex;
     gap: 1rem;
     margin-left: auto;
+    font-weight: 600;
+}
+
+.navbar-container_links li {
+    transition: 0.5s;
+}
+
+.navbar-container_title {
+    transition: 0.5s;
+}
+
+.navbar-container_title:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+}
+
+.navbar-container_links li:hover {
+    transition: 0.5s;
+    font-size: 15px;
+    cursor: pointer;
 }

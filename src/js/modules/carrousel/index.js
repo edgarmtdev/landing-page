@@ -1,17 +1,24 @@
 const carrousel = document.getElementById('carrousel')
-const title = document.getElementById('title')
 
 export default function renderCarrousel(data) {
     data.forEach(item => {
         const card = document.createElement('div')
+        const title = document.createElement('h4')
         card.classList.add('card')
         card.style.backgroundImage = `url('${item.img}')`
+        title.innerText = item.name
+        title.id = 'title'
+        title.classList.add('text-2xl')
+        card.appendChild(title)
         carrousel.appendChild(card)
+        card.onmouseover = () => {
+            card.classList.toggle('hover')
+        }
     })
     addEvents(data)
 }
 
-function addEvents(data) {
+function addEvents() {
     const card = document.querySelector('.card')
     const rigth = document.getElementById('rigth')
     const left = document.getElementById('left')
