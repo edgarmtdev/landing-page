@@ -15,11 +15,8 @@
 .cards {
     display: -webkit-box;
     gap: 1rem;
-    // width: 50%;
-    height: 70vh;
-    // position: absolute;
+    height: 80vh;
     right: 0;
-    margin-top: 3rem;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -37,24 +34,31 @@
 }
 
 .card {
-    background-color: white;
-    width: 300px;
-    height: 25rem;
-    padding: 1rem;
-    // animation: translate 1s ease-in;
-    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #rigth,
 #left {
     position: absolute;
-    right: 1rem;
+    right: 0rem;
+    top: 2.5rem;
     padding: 10px;
     border-radius: 9999px;
+    width: 3.5rem;
+    font-weight: 700;
+    transform: translateY(40vh);
 }
 
 #left {
-    right: 3rem;
+    left: 0rem;
+}
+
+#title {
+  text-align: center;
 }
 
 @keyframes translate {

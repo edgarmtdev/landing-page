@@ -1,5 +1,4 @@
-'use strict'
-import './modules/carrousel/index.js'
+import './modules/home/index.js'
 import '../sass/index.scss'
 
 document.addEventListener('DOMContentLoaded', () => {
