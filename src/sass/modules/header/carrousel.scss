@@ -1,34 +1,4 @@
-@mixin mixin($size) {
-  @if $size ==sm {
-    @media (max-width: 599px) {
-      @content;
-    }
-  }
-
-  @else if $size ==md {
-    @media (min-width: 600px) {
-      @content;
-    }
-  }
-
-  @else if $size ==lg {
-    @media (min-width: 900px) {
-      @content;
-    }
-  }
-
-  @else if $size ==xl {
-    @media (min-width: 1200px) {
-      @content;
-    }
-  }
-
-  @else if $size ==2xl {
-    @media (min-width: 1800px) {
-      @content;
-    }
-  }
-}
+@import '../../global/mixins.scss';
 
 .cards {
   display: -webkit-box;
@@ -50,7 +20,7 @@
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   position: relative;
   display: flex;
   justify-content: center;
@@ -89,11 +59,11 @@
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.509);
   cursor: pointer;
-}
 
-#title:hover {
-  transition: .5s;
-  opacity: 0;
+  &:hover {
+    transition: .5s;
+    opacity: 0;
+  }
 }
 
 @keyframes translate {

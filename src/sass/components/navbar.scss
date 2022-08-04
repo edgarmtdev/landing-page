@@ -16,20 +16,18 @@
 
 .navbar-container_links li {
     transition: 0.5s;
+    &:hover {
+        transition: 0.5s;
+        font-size: 15px;
+        cursor: pointer;
+    }
 }
 
 .navbar-container_title {
     transition: 0.5s;
-}
-
-.navbar-container_title:hover {
-    cursor: pointer;
-    transition: 0.5s;
-    color: rgb(0, 0, 0);
-}
-
-.navbar-container_links li:hover {
-    transition: 0.5s;
-    font-size: 15px;
-    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+        transition: 0.5s;
+        color: rgb(0, 0, 0);
+    }
 }

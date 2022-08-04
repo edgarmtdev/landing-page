@@ -1,0 +1,19 @@
+@import '../../global/mixins.scss';
+
+.main-subscriptions {
+    margin: 3rem 0;
+}
+
+.main-subscriptions_title {
+    text-align: center;
+}
+
+@include mixin(xl) {
+    #rigth {
+        right: 1rem;
+    }
+
+    #left {
+        left: 1rem;
+    }
+}

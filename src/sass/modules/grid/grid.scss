@@ -1,13 +1,54 @@
+@import '../../global/mixins.scss';
+
+
+
 .main-grid {
-    max-width: 920px;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 .main-grid_title {
-    margin: 2rem 0;
+    max-width: 920px;
+    margin: 0 1rem;
 }
 
 .main-grid_title h4, p {
     text-align: center;
     margin-bottom: 0.5rem;
+}
+
+.main-grid_section {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 3.5rem;
+}
+
+.grid-tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.grid-tag h6 {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.grid-tag p {
+    line-height: 1.2rem;
+}
+
+@include mixin(md) {
+    .main-grid_title {
+        margin: 0 auto;
+    }
+
+    .main-grid_section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
 }
