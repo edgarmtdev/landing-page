@@ -38,4 +38,12 @@ function addEvents() {
             behavior: "smooth"
         })
     }
+
+    setInterval(() => {
+        // carrousel.scroll({
+        //     top: 0,
+        //     left: carrousel.scrollLeft + card.clientWidth + 16,
+        //     behavior: "smooth",
+        // })
+    }, 5000)
 }

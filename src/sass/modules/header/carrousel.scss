@@ -1,63 +1,80 @@
 @mixin mixin($size) {
-    @if $size == sm {
-      @media (max-width: 599px) { @content; }
-    } @else if $size == md {
-      @media (min-width: 600px) { @content; }
-    } @else if $size == lg{
-      @media (min-width: 900px) { @content; }
-    } @else if $size == xl {
-      @media (min-width: 1200px) { @content; }
-    } @else if $size == 2xl {
-      @media (min-width: 1800px) { @content; }
+  @if $size ==sm {
+    @media (max-width: 599px) {
+      @content;
     }
   }
 
-.cards {
-    display: -webkit-box;
-    gap: 1rem;
-    height: 85vh;
-    right: 0;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    color: black;
-    &::-webkit-scrollbar {
-        overflow-x: hidden;
+  @else if $size ==md {
+    @media (min-width: 600px) {
+      @content;
     }
+  }
+
+  @else if $size ==lg {
+    @media (min-width: 900px) {
+      @content;
+    }
+  }
+
+  @else if $size ==xl {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else if $size ==2xl {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
 }
 
-@include mixin(md) {
-    .card {
-        position: absolute;
-        width: 50%;
-    }
+.cards {
+  display: -webkit-box;
+  gap: 1rem;
+  height: 85vh;
+  right: 0;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  color: black;
+  z-index: 0;
+  &::-webkit-scrollbar {
+    overflow-x: hidden;
+  }
 }
 
 .card {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #rigth,
 #left {
-    position: absolute;
-    right: 0rem;
-    top: 2.5rem;
-    padding: 10px;
-    border-radius: 9999px;
-    width: 3.5rem;
-    font-weight: 700;
-    transform: translateY(44vh);
+  position: absolute;
+  top: 2.5rem;
+  transform: translateY(44vh);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+#rigth {
+  right: 0.5rem;
 }
 
 #left {
-    left: 0rem;
+  left: 0.5rem;
 }
 
 #title {
@@ -69,21 +86,32 @@
   height: 100%;
   color: white;
   transition: 0.5s;
-  opacity: 0;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.509);
   cursor: pointer;
 }
 
 #title:hover {
   transition: .5s;
-  background-color: rgba(0, 0, 0, 0.509);
-  opacity: 1;
+  opacity: 0;
 }
 
 @keyframes translate {
-    from {
-        transform: translateY(40%);
-    }
-    to {
-        transform: translateY(0%);
-    }
+  from {
+    transform: translateY(40%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@include mixin(xl) {
+  #rigth {
+    right: 1rem;
+  }
+  
+  #left {
+    left: 1rem;
+  }
 }
