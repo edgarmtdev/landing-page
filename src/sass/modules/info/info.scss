@@ -1,0 +1,19 @@
+.main-info {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.main-info_img {
+    max-width: 90%;
+    margin: 0 0 0 3rem;
+    img {
+        max-width: 100%;
+    }
+}
+
+.main-info_data {
+    font-weight: 700;
+    margin: 0 2rem;
+}
