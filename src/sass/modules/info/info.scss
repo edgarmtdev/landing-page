@@ -1,13 +1,16 @@
 .main-info {
-    margin-top: 4rem;
+    margin: 8rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    p{
+        line-height: 3rem;
+    }
 }
 
 .main-info_img {
-    max-width: 90%;
-    margin: 0 0 0 3rem;
+    max-width: 100%;
+    margin: 0 0 0 2rem;
     img {
         max-width: 100%;
     }

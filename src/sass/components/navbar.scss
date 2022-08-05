@@ -1,10 +1,22 @@
 .navbar {
-    color: rgb(111, 111, 111);
-    padding: 1.5rem 2rem;
+    color: rgb(141, 141, 141);
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: 10ms;
 }
+
+.navbar-nav_shadow {
+    transition: 10ms;
+    box-shadow: 2px 17px 38px -38px rgba(0,0,0,0.72);
+} 
 
 .navbar-container {
     display: flex;
+    max-width: 1280px;
+    margin: 2rem auto;
+    padding: 0 4rem;
 }
 
 .navbar-container_links {

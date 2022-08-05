@@ -36,7 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  z-index: 1;
 }
 
 #rigth {
@@ -66,13 +66,13 @@
   }
 }
 
-@keyframes translate {
+@keyframes init {
   from {
-    transform: translateY(40%);
+    height: 0;
   }
 
   to {
-    transform: translateY(0%);
+    height: 85vh;
   }
 }
 

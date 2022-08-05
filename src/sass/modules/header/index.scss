@@ -1,39 +1,13 @@
-// @import '../../global/mixins.scss' mixin;
+@import '../../global/mixins.scss';
 
 .header {
   margin-top: 0rem;
+  padding-top: 4rem;
+  z-index: 0;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-@mixin mixin($size) {
-  @if $size ==sm {
-    @media (max-width: 599px) {
-      @content;
-    }
-  }
-
-  @else if $size ==md {
-    @media (min-width: 600px) {
-      @content;
-    }
-  }
-
-  @else if $size ==lg {
-    @media (min-width: 900px) {
-      @content;
-    }
-  }
-
-  @else if $size ==xl {
-    @media (min-width: 1200px) {
-      @content;
-    }
-  }
-
-  @else if $size ==2xl {
-    @media (min-width: 1800px) {
-      @content;
-    }
-  }
+@include mixin(sm) {
+  
 }
-
-@include mixin(sm) {}
