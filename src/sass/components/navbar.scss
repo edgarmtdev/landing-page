@@ -1,3 +1,5 @@
+ @import '../global/mixins.scss';
+
 .navbar {
     color: rgb(141, 141, 141);
     background-color: white;
@@ -16,7 +18,7 @@
     display: flex;
     max-width: 1280px;
     margin: 2rem auto;
-    padding: 0 4rem;
+    padding: 0 1rem;
 }
 
 .navbar-container_links {
@@ -41,5 +43,11 @@
         cursor: pointer;
         transition: 0.5s;
         color: rgb(0, 0, 0);
+    }
+}
+
+@include mixin(md) {
+    .navbar-container {
+        padding: 0 4rem;
     }
 }
