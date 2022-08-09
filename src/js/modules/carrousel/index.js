@@ -1,5 +1,5 @@
 import createElement from "../../libs/ui/createElements.js";
-import swiper from "../../libs/swiper/swiper.js";
+import slider from "../../libs/slider/slider.js";
 
 const carrousel = document.getElementById("carrousel");
 const right = document.getElementById("right");
@@ -30,5 +30,5 @@ export default function renderCarrousel(data) {
         };
     });
     const card = document.querySelector(".card");
-    swiper(carrousel, card, right, left);
+    slider(carrousel, card, right, left);
 }
