@@ -1,13 +1,14 @@
 import createElement from "../../libs/ui/createElements";
 import slider from "../../libs/slider/slider";
+import Title from "./components/title";
+import Content from "./components/content";
 
 const mainPlans = document.querySelector(".main-plans_section");
 const left = document.getElementById("plans-left");
 const right = document.getElementById("plans-right");
 
 export default function renderPlans(data) {
-    console.log(data);
-    data.forEach((item) => {
+    data.map((item) => {
         const card = createElement(
             "article",
             {
@@ -15,31 +16,11 @@ export default function renderPlans(data) {
             },
             ""
         );
-        const title = createElement(
-            "h6",
-            {
-                class: "text-base",
-            },
-            item.title
-        );
-        const content = createElement(
-            "div",
-            {
-                class: "card-plan_content",
-            },
-            ""
-        );
-        const p = createElement(
-            "p",
-            {
-                class: "text-sm",
-            },
-            item.description
-        );
+        const title = Title(item)
+        const content = Content(item)
 
         card.appendChild(title);
         card.appendChild(content);
-        content.appendChild(p);
         mainPlans.appendChild(card);
     });
     const cardPlan = document.querySelector(".card-plan");
