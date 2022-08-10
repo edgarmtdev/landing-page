@@ -28,7 +28,7 @@
 
 .main-plans_section {
     display: -webkit-box;
-    gap: 1rem;
+    gap: 2rem;
     height: 85vh;
     right: 0;
     overflow-x: scroll;
@@ -46,8 +46,7 @@
         background-color: white;
         width: 100%;
         height: 80%;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        border-radius: 10px;
         text-align: center;
 
         h6 {
@@ -58,6 +57,7 @@
             align-items: center;
             justify-content: center;
             border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
 
         .card-plan_content {
@@ -72,11 +72,11 @@
         padding: 2rem 2rem;
 
         .main-plans_section {
-            overflow: hidden;
-            display: flex;
+            // overflow: hidden;
+            // display: flex;
 
             .card-plan {
-                width: 1fr;
+                width: 30%;
             }
         }
     }

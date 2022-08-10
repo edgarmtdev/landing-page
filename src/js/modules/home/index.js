@@ -1,4 +1,5 @@
 import renderCarrousel from '../carrousel/index';
+import renderPlans from '../plans/index';
 
 const data = [
     {
@@ -19,4 +20,40 @@ const data = [
     },
 ]
 
+const plans = [
+    {
+        title: 'Venecia',
+        description: 'Lorem ipsum',
+        date: '',
+        img: 'https://images.pexels.com/photos/12382781/pexels-photo-12382781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        days: 7,
+        price: 600,
+    },
+    {
+        title: 'Paris',
+        description: 'Lorem ipsum',
+        date: '',
+        img: 'https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=600',
+        days: 5,
+        price: 400,
+    },
+    {
+        title: 'Paris',
+        description: 'Lorem ipsum',
+        date: '',
+        img: 'https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=600',
+        days: 5,
+        price: 400,
+    },
+    {
+        title: 'Paris',
+        description: 'Lorem ipsum',
+        date: '',
+        img: 'https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=600',
+        days: 5,
+        price: 400,
+    }
+]
+
 renderCarrousel(data)
+renderPlans(plans)

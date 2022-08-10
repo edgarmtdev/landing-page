@@ -1,6 +1,6 @@
 'use strict'
 
-export default function swiper(root, card, right, left) {
+export default function slider(root, card, right, left) {
     right.onclick = () => {
         root.scroll({
             top: 0,

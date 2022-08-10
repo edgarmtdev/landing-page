@@ -1,5 +1,5 @@
-import createElement from "../../libs/ui/createElements.js";
-import slider from "../../libs/slider/slider.js";
+import createElement from "../../libs/ui/createElements";
+import slider from "../../libs/slider/slider";
 
 const carrousel = document.getElementById("carrousel");
 const right = document.getElementById("right");
