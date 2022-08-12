@@ -33,7 +33,7 @@ const plans = [
         title: 'Paris',
         description: 'Lorem ipsum',
         date: '',
-        img: 'https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=600',
+        img: 'https://images.pexels.com/photos/1125212/pexels-photo-1125212.jpeg?auto=compress&cs=tinysrgb&w=600',
         days: 5,
         price: 400,
     },

@@ -54,19 +54,31 @@
         text-align: center;
 
         h6 {
-            background-color: #00a896;
+            transition: 1.5s;
+            background-position-y: 60%;
+            background-size: cover;
+            background-repeat: no-repeat;
             color: white;
-            padding: 2rem;
+            padding: 5rem;
             display: flex;
             align-items: center;
             justify-content: center;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
+
+            &:hover {
+                transition: 1.5s;
+                background-position-y: 80%;
+            }
         }
 
         .card-plan_content {
             padding: 1rem;
         }
+    }
+
+    &:hover {
+        cursor: pointer;
     }
 }
 
