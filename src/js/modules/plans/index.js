@@ -13,8 +13,7 @@ export default function renderPlans(data) {
             "article",
             {
                 class: "card-plan",
-            },
-            ""
+            }
         );
         const title = Title(item)
         const content = Content(item)

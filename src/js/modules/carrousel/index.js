@@ -12,7 +12,6 @@ export default function renderCarrousel(data) {
             {
                 class: "card",
             },
-            ""
         );
         carrousel.appendChild(card);
         const title = createElement(

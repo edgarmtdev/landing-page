@@ -7,7 +7,7 @@ export default function createElement(type, attrs, content, events) {
     element.setAttribute(attr, attrs[attr]);
   });
 
-  element.innerText = content;
+  if (content) element.innerText = content;
 
   return element;
 }
