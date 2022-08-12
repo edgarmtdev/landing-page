@@ -1,5 +1,5 @@
 const path = require('path')
-const webpack = require('webpack')
+const webpack = require('webpack')  
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HTMLWebpackPlugin = require('html-webpack-plugin')
