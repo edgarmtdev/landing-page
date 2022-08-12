@@ -32,7 +32,7 @@
 
 .main-plans_section {
     display: -webkit-box;
-    gap: 2rem;
+    gap: 1em;
     height: 85vh;
     right: 0;
     overflow-x: scroll;
@@ -88,11 +88,18 @@
         padding: 2rem 2rem;
 
         .main-plans_section {
-            // overflow: hidden;
-            // display: flex;
-
             .card-plan {
-                width: 31.6%;
+                width: 48%;
+            }
+        }
+    }
+}
+
+@include mixin(lg) {
+    .main-plans {
+        .main-plans_section {
+            .card-plan {
+                width: 32.5%;
             }
         }
     }

@@ -22,7 +22,7 @@ const data = [
 
 const plans = [
     {
-        title: 'Venecia',
+        title: 'Venecia, Italia',
         description: 'Lorem ipsum',
         date: '',
         img: 'https://images.pexels.com/photos/12382781/pexels-photo-12382781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -30,7 +30,7 @@ const plans = [
         price: 600,
     },
     {
-        title: 'Paris',
+        title: 'Paris, Francia',
         description: 'Lorem ipsum',
         date: '',
         img: 'https://images.pexels.com/photos/1125212/pexels-photo-1125212.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -38,18 +38,18 @@ const plans = [
         price: 400,
     },
     {
-        title: 'Paris',
+        title: 'Roma, Italia',
         description: 'Lorem ipsum',
         date: '',
-        img: 'https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=600',
+        img: 'https://images.pexels.com/photos/3757139/pexels-photo-3757139.jpeg?auto=compress&cs=tinysrgb&w=600',
         days: 5,
         price: 400,
     },
     {
-        title: 'Paris',
+        title: 'Pisa, Italia',
         description: 'Lorem ipsum',
         date: '',
-        img: 'https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=600',
+        img: 'https://images.pexels.com/photos/5538432/pexels-photo-5538432.jpeg?auto=compress&cs=tinysrgb&w=600',
         days: 5,
         price: 400,
     }
