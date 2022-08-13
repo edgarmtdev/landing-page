@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 export default function slider(root, card, right, left) {
     right.onclick = () => {
@@ -17,11 +17,13 @@ export default function slider(root, card, right, left) {
         });
     };
 
-    setInterval(() => {
-        // carrousel.scroll({
-        //     top: 0,
-        //     left: carrousel.scrollLeft + card.clientWidth + 16,
-        //     behavior: "smooth",
-        // })
-    }, 5000);
+    // if (auto) {
+    //     setInterval(() => {
+    //         root.scroll({
+    //             top: 0,
+    //             left: root.scrollLeft + card.clientWidth + 16,
+    //             behavior: "smooth",
+    //         })
+    //     }, 3000);
+    // }
 }

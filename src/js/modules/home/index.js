@@ -52,7 +52,7 @@ const plans = [
         img: 'https://images.pexels.com/photos/5538432/pexels-photo-5538432.jpeg?auto=compress&cs=tinysrgb&w=600',
         days: 5,
         price: 400,
-    }
+    },
 ]
 
 renderCarrousel(data)

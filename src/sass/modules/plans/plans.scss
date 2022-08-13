@@ -3,7 +3,8 @@
 .main-plans {
     margin: 3rem 0;
     padding: 1rem;
-    background-color: #f0f0f0;
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png');
+    background: #f0f0f0;
     height: 80vh;
 }
 
@@ -23,10 +24,12 @@
 
         #plans-right,
         #plans-left {
+            display: flex;
+            padding: 4px;
             margin-left: 1rem;
             background-color: black;
-            padding: 5px;
             border-radius: 9999px;
+            cursor: pointer;
         }
     }
 }
@@ -61,7 +64,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             color: white;
-            padding: 5rem;
+            padding: 6rem;
             display: flex;
             align-items: center;
             justify-content: center;

@@ -52,11 +52,16 @@
   position: absolute;
   top: 2.5rem;
   transform: translateY(44vh);
-  // background-color: white;
+  background-color: white;
+  border-radius: 9999px;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
+
+  &:hover {
+  filter: blur(0.8px);
+  }
 }
 
 #right {
@@ -76,6 +81,13 @@
   to {
     height: 85vh;
   }
+}
+
+@media (min-width: 1310px){
+  #right, 
+  #left {
+    background-color: transparent;
+  } 
 }
 
 @include mixin(xl) {
