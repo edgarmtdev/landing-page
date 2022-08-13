@@ -1,53 +1,54 @@
- @import '../global/mixins.scss';
+@import "../global/mixins.scss";
 
 .navbar {
-    color: rgb(141, 141, 141);
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    transition: 10ms;
+  color: rgb(141, 141, 141);
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: 10ms;
 }
 
 .navbar-nav_shadow {
-    transition: 10ms;
-    box-shadow: 0px 3px 35px -28px rgba(0,0,0,0.94);
-} 
+  transition: 10ms;
+  box-shadow: 0px 3px 35px -28px rgba(0, 0, 0, 0.94);
+}
 
 .navbar-container {
-    display: flex;
-    max-width: 1280px;
-    margin: 1.5rem auto;
-    padding: 0 1rem;
+  display: flex;
+  max-width: 1280px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
 }
 
 .navbar-container_links {
-    display: flex;
-    gap: 1rem;
-    margin-left: auto;
-    font-weight: 600;
-}
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  font-weight: 600;
 
-.navbar-container_links li {
+  li {
     transition: 0.5s;
     &:hover {
-        transition: 0.5s;
-        font-size: 15px;
-        cursor: pointer;
+      transition: 0.5s;
+      border-bottom: 1.5px solid rgb(141, 141, 141);
+      font-size: 15px;
+      cursor: pointer;
     }
+  }
 }
 
 .navbar-container_title {
+  transition: 0.5s;
+  &:hover {
+    cursor: pointer;
     transition: 0.5s;
-    &:hover {
-        cursor: pointer;
-        transition: 0.5s;
-        color: rgb(0, 0, 0);
-    }
+    color: rgb(0, 0, 0);
+  }
 }
 
 @include mixin(md) {
-    .navbar-container {
-        padding: 0 4rem;
-    }
+  .navbar-container {
+    padding: 0 4rem;
+  }
 }

@@ -1,72 +1,71 @@
-@import '../../global/mixins.scss';
+@import "../../global/mixins.scss";
 
 .main-info {
-    margin: 8rem auto;
+  margin: 8rem auto;
 }
 
 .main-info_img {
+  max-width: 100%;
+  margin-bottom: 2rem;
+  img {
     max-width: 100%;
-    margin-bottom: 2rem;
-    img {
-        max-width: 100%;
-        border-radius: 10px;
-        box-shadow: 0px 3px 35px -28px rgba(0,0,0,0.94); 
-    }
+    border-radius: 10px;
+    box-shadow: 0px 3px 35px -28px rgba(0, 0, 0, 0.94);
+  }
 }
 
 .main-info_data {
-    margin-top: 1rem;
-    text-align: center;
-    margin: 0 1rem;
-    h4 {
-        margin: 0 0 2rem 0;
-    }
-    p {
-        line-height: 2rem;
-        margin-bottom: 5rem;
-    }
+  margin-top: 1rem;
+  text-align: center;
+  margin: 0 1rem;
+  h4 {
+    margin: 0 0 2rem 0;
+  }
+  p {
+    line-height: 2rem;
+    margin-bottom: 5rem;
+  }
 }
 
 @include mixin(lg) {
-    .main-info {
-        margin: 8rem 2rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        position: relative;
-        p {
-            line-height: 2rem;
-            margin-bottom: 8rem;
-        }
+  .main-info {
+    margin: 8rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    position: relative;
+    p {
+      line-height: 2rem;
+      margin-bottom: 8rem;
     }
+  }
 
-    .main-info_data {
-        margin-top: 0rem;
-        text-align: left;
-        font-weight: 600;
-        margin: 0 3rem;
-        p {
-            line-height: 2rem;
-        }
+  .main-info_data {
+    margin-top: 0rem;
+    text-align: left;
+    font-weight: 600;
+    margin: 0 3rem;
+    p {
+      line-height: 2rem;
     }
+  }
 
-    .main-info_img {
-        margin: 0 0 0 2rem;
-
-        img {
-            top: 20%;
-            position: sticky;
-        }
+  .main-info_img {
+    margin: 0 0 0 2rem;
+    img {
+      top: 20%;
+      position: sticky;
     }
+  }
 }
 
 @include mixin(xl) {
-    .main-info {
-        margin: 8rem 1rem;
-        gap: 5rem;
-        position: relative;
-        p {
-            line-height: 2rem;
-        }
+  .main-info {
+    margin: 8rem 1rem;
+    gap: 5rem;
+    position: relative;
+    p {
+      line-height: 2rem;
     }
+  }
 }

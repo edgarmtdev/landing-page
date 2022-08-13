@@ -1,123 +1,122 @@
-@import '../../global/mixins.scss';
+@import "../../global/mixins.scss";
 
 .main-plans {
-    margin: 3rem 0;
-    padding: 1rem;
-    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png');
-    background: #f0f0f0;
-    height: 80vh;
+  margin: 3rem 0;
+  padding: 1rem;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png");
+  background: #f0f0f0;
+  height: 80vh;
 }
 
 .main-plans_title {
-    position: relative;
+  position: relative;
 
-    h4 {
-        padding: 0 0 2rem 0;
-        text-align: center;
+  h4 {
+    padding: 0 0 2rem 0;
+    text-align: center;
+  }
+
+  .main-plans_title_controls {
+    top: 0px;
+    right: 10px;
+    position: absolute;
+    display: none;
+
+    #plans-right,
+    #plans-left {
+      display: flex;
+      padding: 4px;
+      margin-left: 1rem;
+      background-color: black;
+      border-radius: 9999px;
+      cursor: pointer;
     }
-
-    .main-plans_title_controls {
-        top: 0px;
-        right: 0;
-        position: absolute;
-        display: none;
-
-        #plans-right,
-        #plans-left {
-            display: flex;
-            padding: 4px;
-            margin-left: 1rem;
-            background-color: black;
-            border-radius: 9999px;
-            cursor: pointer;
-        }
-    }
+  }
 }
 
 .main-plans_section {
-    display: -webkit-box;
-    gap: 1em;
-    height: 85vh;
-    right: 0;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    color: black;
-    z-index: 0;
-    justify-content: center;
+  display: -webkit-box;
+  gap: 1em;
+  height: 85vh;
+  right: 0;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  color: black;
+  z-index: 0;
+  justify-content: center;
 
-    &::-webkit-scrollbar {
-        overflow-x: hidden;
+  &::-webkit-scrollbar {
+    overflow-x: hidden;
+  }
+
+  .card-plan {
+    background-color: white;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.2s;
+
+    h6 {
+      transition: 1.5s;
+      background-position-y: 60%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      padding: 6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+      &:hover {
+        transition: 1.5s;
+        background-position-y: 80%;
+      }
     }
 
-    .card-plan {
-        background-color: white;
-        width: 100%;
-        height: 80%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.2s;
-
-        h6 {
-            transition: 1.5s;
-            background-position-y: 60%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            color: white;
-            padding: 6rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-
-            &:hover {
-                transition: 1.5s;
-                background-position-y: 80%;
-            }
-        }
-
-        .card-plan_content {
-            padding: 1rem;
-        }
-
-        &:hover {
-            transition: 0.2s;
-            transform: scale(1.01);
-            box-shadow: 0px 3px 35px -28px rgba(0,0,0,0.94); 
-        }
+    .card-plan_content {
+      padding: 1rem;
     }
 
     &:hover {
-        cursor: pointer;
+      transition: 0.2s;
+      transform: scale(1.01);
+      box-shadow: 0px 3px 35px -28px rgba(0, 0, 0, 0.94);
     }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-
 @include mixin(md) {
-    .main-plans {
-        padding: 2rem 2rem;
+  .main-plans {
+    padding: 2rem 2rem;
 
-        .main-plans_title {
-            .main-plans_title_controls{
-                display: flex;
-            }
-        }
-
-        .main-plans_section {
-            .card-plan {
-                width: 48%;
-            }
-        }
+    .main-plans_title {
+      .main-plans_title_controls {
+        display: flex;
+      }
     }
+
+    .main-plans_section {
+      .card-plan {
+        width: 48%;
+      }
+    }
+  }
 }
 
 @include mixin(lg) {
-    .main-plans {
-        .main-plans_section {
-            .card-plan {
-                width: 32.5%;
-            }
-        }
+  .main-plans {
+    .main-plans_section {
+      .card-plan {
+        width: 32.5%;
+      }
     }
+  }
 }
