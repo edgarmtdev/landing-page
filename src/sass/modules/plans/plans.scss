@@ -77,8 +77,26 @@
       }
     }
 
+    .plan-date {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px 1rem;
+      font-size: 14px;
+      transition: 20ms;
+      border-top-right-radius: 10px;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      opacity: 1;
+    }
+
     .card-plan_content {
       padding: 1rem;
+      padding-top: 1.7rem;
+
+      p {
+        font-weight: 600;
+      }
     }
 
     &:hover {

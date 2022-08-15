@@ -1,6 +1,6 @@
 import createElement from "../../../libs/ui/createElements";
 
-export default function Content(data) {
+export default function Description(data) {
     const content = createElement(
         "div",
         {

@@ -1,7 +1,8 @@
 import createElement from "../../libs/ui/createElements";
 import slider from "../../libs/slider/slider";
 import Title from "./components/title";
-import Content from "./components/content";
+import Description from "./components/description";
+import Date from "./components/date";
 
 const mainPlans = document.querySelector(".main-plans_section");
 const left = document.getElementById("plans-left");
@@ -16,10 +17,13 @@ export default function renderPlans(data) {
             }
         );
         const title = Title(item)
-        const content = Content(item)
+        const description = Description(item)
+        const date = Date(item.date)
 
+        
         card.appendChild(title);
-        card.appendChild(content);
+        card.appendChild(description);
+        card.appendChild(date)
         mainPlans.appendChild(card);
     });
     const cardPlan = document.querySelector(".card-plan");

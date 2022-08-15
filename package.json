@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "html-loader": "^4.1.0",
+    "luxon": "^3.0.1",
     "three": "^0.142.0"
   },
   "keywords": [],
