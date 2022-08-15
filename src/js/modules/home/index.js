@@ -3,12 +3,12 @@ import renderPlans from "../plans/index";
 
 const data = [
   {
-    name: "Dessert",
-    img: "https://images.pexels.com/photos/461956/pexels-photo-461956.jpeg?cs=srgb&dl=pexels-pixabay-461956.jpg&fm=jpg",
+    name: "Chichén Itza, México",
+    img: "https://images.pexels.com/photos/5869131/pexels-photo-5869131.jpeg",
   },
   {
-    name: "Ligths",
-    img: "https://images.pexels.com/photos/360912/pexels-photo-360912.jpeg?cs=srgb&dl=pexels-visit-greenland-360912.jpg&fm=jpg",
+    name: "San Francisco, California",
+    img: "https://images.pexels.com/photos/417054/pexels-photo-417054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     name: "Beach",
