@@ -1,5 +1,4 @@
 import createElement from "../../../libs/ui/createElements";
-import Date from "./date";
 
 export default function Title(data) {
     const title = createElement(

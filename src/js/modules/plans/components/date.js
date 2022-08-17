@@ -1,13 +1,15 @@
 import createElement from "../../../libs/ui/createElements";
-import { DateTime } from 'luxon'
+import { DateTime } from "luxon";
 
 export default function Date(data) {
-    const newDate = DateTime.fromJSDate(data).toFormat("MMMM d yyyy")    
-    const date = createElement('div', {
-        class: 'plan-date text-xs'
-    },
-    newDate
-    )
+    const newDate = DateTime.fromJSDate(data).toFormat("MMMM d yyyy");
+    const date = createElement(
+        "div",
+        {
+            class: "plan-date text-xs",
+        },
+        newDate
+    );
 
-    return date
+    return date;
 }

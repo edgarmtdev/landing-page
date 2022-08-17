@@ -39,7 +39,7 @@ const plans = [
   },
   {
     title: "Rome, Italy",
-    description: "Visita el pasado de la humanidad ",
+    description: "Visit the past of humanity",
     date: new Date(new Date().setDate(new Date().getDate() + 28)),
     img: "https://images.pexels.com/photos/3757139/pexels-photo-3757139.jpeg?auto=compress&cs=tinysrgb&w=600",
     days: 5,
