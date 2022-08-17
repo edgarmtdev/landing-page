@@ -80,16 +80,29 @@ module.exports = {
           {
             loader: "sass-loader",
             options: {
-              // Prefer `dart-sass`
               implementation: require("sass"),
             },
           },
         ]
       },
       {
-        test:/\.(png|jpe?g|svg|gif|webp)$/,
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
-    }
+        generator: {
+          filename: 'public/fonts/[name][ext]',
+        },
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|webp|ico)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'public/images/[name][ext]',
+        },
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
+      }
     ]
   },
   plugins: [
