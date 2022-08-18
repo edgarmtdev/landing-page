@@ -39,15 +39,15 @@
 
     .info-img_anim {
       position: static;
-      max-width: 90%;
-      animation: rotate 45s linear infinite;
+      max-width: 40%;
+      animation: rotate 35s linear infinite;
       box-sizing: border-box;
     }
 
     .info-img_static {
-      max-width: 25%;
+      max-width: 15%;
       position: absolute;
-      
+      // animation: rotate 35s linear infinite;
     }
   }
 }
@@ -56,7 +56,7 @@
   from {
     transform: rotate(0deg);
   }
-
+  
   to {
     transform: rotate(360deg);
   }
@@ -74,41 +74,41 @@
       line-height: 2rem;
       margin-bottom: 6rem;
     }
-  }
 
-  .main-info_data {
-    margin-top: 0rem;
-    text-align: left;
-    font-weight: 600;
-    margin: 0 3rem;
-
-    p {
-      line-height: 2rem;
+    .main-info_img {
+      margin: 0 0 0 2rem;
+  
+      img {
+        top: 20%;
+        position: sticky;
+      }
     }
-  }
-
-  .main-info_img {
-    margin: 0 0 0 2rem;
-
-    img {
-      top: 20%;
+    
+    .main-info_data {
+      margin-top: 0rem;
+      text-align: left;
+      font-weight: 600;
+      margin: 0 3rem;
+  
+      p {
+        line-height: 2rem;
+      }
+    }
+  
+    .main-info_anim {
       position: sticky;
-    }
-  }
-
-
-  .main-info_anim {
-    position: relative;
-
-    .info-img_anim {
-      position: absolute;
-      max-width: 50%;
-      box-sizing: border-box;
-    }
-
-    .info-img_static {
-      max-width: 25%;
-      position: absolute;
+      top: 20%;
+  
+      .info-img_anim {
+        position: absolute;
+        max-width: 90%;
+        box-sizing: border-box;
+      }
+  
+      .info-img_static {
+        max-width: 25%;
+        position: absolute;
+      }
     }
   }
 }
